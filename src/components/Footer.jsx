@@ -13,12 +13,21 @@ function Footer() {
               <img loading="lazy" src={IconoFooter} alt="" />
               <p>PROYECTA</p>
             </div>
-            <p>+511 - 518-2132</p>
-            <p>contacto@proyecta.com</p>
+            <div className="contenido-footer__contacto-movil">
+              <img src={Telefono} alt="" />
+              <p> +511 - 518-2132</p>
+            </div>
+           {/*  <p>+511 - 518-2132</p> */}
+           <div className="contenido-footer__contacto-movil">
+            <img src={Correo} alt="" />
+              <p>contacto@proyecta.com</p>
+            </div>
+          {/*   <p>contacto@proyecta.com</p> */}
             <p>Av. República de Panamá 4495, Surquillo.</p>
             <img src={Whatsp} alt="" />
             <img src={Fb} alt="" className="ms-3" />
           </div>
+
           <div className="container-footer__enlace">
             <div className="container-footer__enlace-titulo">
               <img loading="lazy" src={IconoFooter} alt="" />
@@ -37,7 +46,7 @@ function Footer() {
             </div>
             <div className="contenido-footer__contacto">
             <img src={Correo} alt="" />
-              <p>      contacto@proyecta.com</p>
+              <p>contacto@proyecta.com</p>
             </div>
             <p>Av. República de Panamá 4495, Surquillo.</p>
           </div>
@@ -62,8 +71,8 @@ function Footer() {
             </p>
           </div>
         </div>
-        <hr />
-        <p className="text-center py-3 m-0">Copyright 2023 - Todos los derechos reservados</p>
+        <div className="linea"></div>
+        <p className="text-center py-3 m-0 copyright">Copyright 2023 - Todos los derechos reservados</p>
       </div>
     </footer>
   );

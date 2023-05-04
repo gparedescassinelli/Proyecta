@@ -45,7 +45,7 @@ function SectionTeam() {
             </div>
         {/*     <button className="btn-proyecta">Escribenos</button> */}
             <div data-aos="fade-up-left">
-              <button className="btn-proyecta">Escribenos</button>
+              <button className="btn-proyecta-team">Escribenos</button>
             </div>
           </div>
         </div>

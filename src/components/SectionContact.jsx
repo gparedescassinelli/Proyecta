@@ -1,4 +1,4 @@
-import Llamanos from "../assets/llamanos.svg";
+import Llamanos from "../assets/LlamanosYa.svg";
 import Escribenos from "../assets/escribenos.svg";
 import ShowRoom from "../assets/showroom.svg";
 function SectionContact() {
@@ -11,19 +11,19 @@ function SectionContact() {
           <div className="container-contactanos-datos__dato">
             <img loading="lazy" src={Llamanos} alt="" />
             <p>Llámanos</p>
-            <p>900-000-000</p>
+            <p>+51 980 666 429</p>
           </div>
 
           <div className="container-contactanos-datos__dato" data-aos="fade-left">
             <img loading="lazy" src={Escribenos} alt="" />
             <p>Escribenos</p>
-            <p>contacto@proyecta.com</p>
+            <p>krosas@cassinelli.com</p>
           </div>
 
           <div className="container-contactanos-datos__dato" data-aos="fade-right">
             <img loading="lazy" src={ShowRoom} alt="" />
             <p>Showroom</p>
-            <p>Av. Republica de Panama 4495 </p>
+            <p>Av. Republica de Panamá N°4495</p>
             <p>Surquillo, Lima, Peru</p>
           </div>
         </div>
