@@ -3,14 +3,14 @@
 function Projects(pro) {
    // console.log('ver pro',pro)
   return (
-    <div className="bg-image"
-    style={{margin:'0 4px'}}>
+    <div className="bg-image-project"
+  >
     <img
       src={pro.pro.img}
       className="img-fluid"
       alt="Sample"
       loading="lazy"
-      style={{height:'420px',margin:'0 0px'}}
+      style={{height:'',margin:'0 0px'}}
     />
     <div className="mask" >
       <div className="d-flex justify-content-center align-items-end h-100">

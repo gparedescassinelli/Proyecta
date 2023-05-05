@@ -194,9 +194,15 @@ img {
 
 /* Section Quote */
 .container-request {
-  background-color: #eff2f6;
+  background-color: #F1EEEA;
   padding: 52px 0;
 }
+@media (max-width: 992px) { 
+  .container-request {
+    background-color: #EFF2F6;
+    padding: 52px 0;
+  }
+ }
 
 .container-request h2 {
   font-weight: 500;
@@ -211,17 +217,25 @@ img {
   font-weight: 300;
   font-size: 30px;
   line-height: 45px;
-  /* identical to box height, or 150% */
   text-align: center;
   letter-spacing: -1.6px;
   color: #2e374c;
   margin-bottom: 30px;
 }
+@media (max-width: 992px) { 
+  .container-request p {
+    width: 300px;
+    margin: 30px auto;
+    line-height: 1.2;
+  }
+ }
 .container-request .btn-proyecta {
   font-weight: 500;
-  width: 90%;
-  height: 100%;
+  display: block;
+  width: 234px;
+  height: 55px;
   padding: 10px 0;
+  margin: 0 auto;
 }
 @media (max-width: 992px) {
   .container-request h2 {
@@ -238,6 +252,7 @@ img {
 
 /* Section Team */
 .title-equipo-especializado {
+  width: 1073px;
   font-style: normal;
   font-weight: 500;
   font-size: 75px;
@@ -245,11 +260,14 @@ img {
   text-align: center;
   letter-spacing: -4px;
   color: #202737;
+  margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 55px;
+ 
 }
 @media (max-width: 992px) {
   .title-equipo-especializado {
+    width: 100%;
     font-size: 38px;
     line-height: 40px;
     letter-spacing: -3px;
@@ -317,8 +335,7 @@ img {
 
 .container-contactanos-datos {
   display: flex;
-  justify-content: center;
-  gap: 300px;
+  justify-content: space-between;
 }
 @media (max-width: 992px) {
   .container-contactanos-datos {
@@ -355,12 +372,16 @@ img {
   align-items: center;
   font-weight: 500;
   font-size: 22px;
-  letter-spacing: 0.41px;
+ /*  letter-spacing: 0.41px; */
   gap: 0px;
+}
+.container-contactanos-datos__dato-titulo{
+  font-size: 18px !important;
 }
 .container-contactanos-datos__dato p {
   margin: 0;
   padding: 0;
+  font-size: 22px;
 }
 
 /* Fin Section Contacto */
@@ -404,12 +425,12 @@ footer img {
     gap: 12px;
   }
   .container-footer__enlace-titulo p {
-    font-size: 28px;
+    font-size: 22px;
   }
 }
 .footer {
   background-color: var(--color-primary);
-  padding-top: 42px;
+  padding-top: 20px;
   color: var(--color-white);
 }
 .container-footer {
@@ -499,6 +520,13 @@ footer img {
 /* Fin Footer */
 
 /* SectionFeaturedProjects */
+.bg-image-project{
+  width: 384px;
+  height: 480px;
+  margin: 0 auto;
+  object-fit: cover;
+  background-size: cover;
+}
 .featuredproject-title {
   font-style: normal;
   font-weight: 500;
@@ -513,9 +541,12 @@ footer img {
 @media (max-width: 992px) {
   .featuredproject-title {
     font-size: 38px;
+    width: 323px;
+    margin: 0 auto;
     line-height: 40px;
     text-align: center;
     margin-top: 25px;
+    margin-bottom: 42px;
     letter-spacing: -4px;
   }
 }
@@ -537,7 +568,7 @@ footer img {
   height: 15px;
   margin: 0 10px;
   border-radius: 50%;
-  background-color: #d9d9d9;
+  background-color: #D9D9D9;
 }
 .custom-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
