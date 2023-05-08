@@ -59,21 +59,22 @@ img {
     padding: 10px 0;
   }
 }
-.navbar-titulo{
-display: flex;
-justify-content: start;
-line-height: 0;
-width: auto;
+.navbar-titulo {
+  display: flex;
+  justify-content: start;
+  line-height: 0;
+  width: auto;
 }
-.navbar-titulo a{
-margin-left: 5px !important;
-}
+/* .navbar-titulo a {
+  margin-left: 38px !important;
+} */
 .title {
   color: var(--color-primary);
   font-weight: 800 !important;
   font-size: 32px !important;
-/*   border: 1px solid green; */
- /*  margin-left: 38px !important; */
+  margin-left: 38px !important;
+  /*   border: 1px solid green; */
+  /*  margin-left: 38px !important; */
 }
 .title:hover {
   color: var(--color-primary);
@@ -83,7 +84,7 @@ margin-left: 5px !important;
     color: var(--color-primary);
     font-weight: 800 !important;
     font-size: 20px !important;
-   /*  margin-left: -140px !important; */
+    margin-left: 10.93px !important;
   }
 }
 
@@ -177,9 +178,9 @@ border-radius: 10px; */
 
 .hero-title {
   max-width: 644px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 65px;
-  text-align: justify;
+  text-align: left;
   letter-spacing: -4px;
   mix-blend-mode: normal;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -401,7 +402,7 @@ border-radius: 10px; */
   padding: 0;
   font-size: 22px;
 }
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
   .container-contactanos-datos__dato-titulo {
     font-size: 14px !important;
     font-weight: 700;
@@ -411,7 +412,7 @@ border-radius: 10px; */
     padding: 0;
     font-size: 16px;
   }
- }
+}
 
 /* Fin Section Contacto */
 
@@ -548,7 +549,7 @@ footer img {
     width: 34px;
     height: 34px;
     display: inline;
- /*    margin-bottom: 25px; */
+    /*    margin-bottom: 25px; */
   }
 }
 /* Fin Footer */
