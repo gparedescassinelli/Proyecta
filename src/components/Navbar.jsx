@@ -4,10 +4,13 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
+        <div className="navbar-titulo">
         <img src={IConoHeader} alt=""/>
         <a className="navbar-brand title ms-4" href="#">
           PROYECTA
         </a>
+        </div>
+      
         <button
           className="navbar-toggler"
           type="button"

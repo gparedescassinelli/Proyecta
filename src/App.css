@@ -59,12 +59,21 @@ img {
     padding: 10px 0;
   }
 }
-
+.navbar-titulo{
+display: flex;
+justify-content: start;
+line-height: 0;
+width: auto;
+}
+.navbar-titulo a{
+margin-left: 5px !important;
+}
 .title {
   color: var(--color-primary);
   font-weight: 800 !important;
   font-size: 32px !important;
-  margin-left: 38px !important;
+/*   border: 1px solid green; */
+ /*  margin-left: 38px !important; */
 }
 .title:hover {
   color: var(--color-primary);
@@ -74,7 +83,7 @@ img {
     color: var(--color-primary);
     font-weight: 800 !important;
     font-size: 20px !important;
-    margin-left: -140px !important;
+   /*  margin-left: -140px !important; */
   }
 }
 
@@ -385,12 +394,24 @@ border-radius: 10px; */
 }
 .container-contactanos-datos__dato-titulo {
   font-size: 18px !important;
+  font-weight: 700;
 }
 .container-contactanos-datos__dato p {
   margin: 0;
   padding: 0;
   font-size: 22px;
 }
+@media (max-width: 992px) { 
+  .container-contactanos-datos__dato-titulo {
+    font-size: 14px !important;
+    font-weight: 700;
+  }
+  .container-contactanos-datos__dato p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+  }
+ }
 
 /* Fin Section Contacto */
 
