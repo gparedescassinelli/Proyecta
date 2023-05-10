@@ -43,16 +43,16 @@ function Navbar() {
           <ul className="navbar-nav" style={{ marginLeft: "auto" }}>
             {/* Agregado estilo personalizado aquí */}
             <li className="nav-item">
-              <a
+              <Link
                 className="nav-link active navbar-link"
                 aria-current="page"
-                href="#"
+                to='/contactanos'
               >
                 Quiénes somos
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link navbar-link-contactanos" to='/contactanos'>
+              <Link className="nav-link navbar-link-contactanos" >
               Contáctanos
               </Link>
             </li>
