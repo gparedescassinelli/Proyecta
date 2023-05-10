@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import IConoHeader from "../assets/IconoHeader.svg";
 function Navbar() {
   return (
@@ -6,9 +7,9 @@ function Navbar() {
       <div className="container">
         <div className="navbar-titulo">
         <img src={IConoHeader} alt=""/>
-        <a className="navbar-brand title ms-4" href="#">
+        <Link className="navbar-brand title ms-4" to="/">
           PROYECTA
-        </a>
+        </Link>
         </div>
       
         <button
@@ -51,9 +52,9 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link navbar-link-contactanos" href="#">
+              <Link className="nav-link navbar-link-contactanos" to='/contactanos'>
               Contáctanos
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

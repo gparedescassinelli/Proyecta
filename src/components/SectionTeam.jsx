@@ -8,13 +8,13 @@ function SectionTeam() {
           Contamos con un equipo especializado
         </h2>
 
-        <div className="container-equipo-especializado">
-          <div data-aos="fade-up-right">
+        <div className="container-equipo-especializado" data-aos="fade-up-left" >
+          <div >
             <img loading="lazy" src={DTeam} alt="equipo especializado" />
           </div>
 
-          <div className="container-equipo-servicios">
-            <div data-aos="fade-up-left">
+          <div className="container-equipo-servicios"  >
+            <div >
               <h3 className="subtitle-team">Servicio integral</h3>
               <p>
                 Tenemos un equipo de especialistas que ven de punta a punta tu
@@ -22,8 +22,7 @@ function SectionTeam() {
                 productos ideales y entrega en obra.
               </p>
             </div>
-
-            <div data-aos="fade-up-left">
+            <div >
               <h3 className="subtitle-team">Asesoría personalizada</h3>
               <p>
                 Todos nuestros asesores se encargan de brindarte el apoyo de
@@ -32,7 +31,7 @@ function SectionTeam() {
               </p>
             </div>
 
-            <div data-aos="fade-up-left">
+            <div>
               <h3 className="subtitle-team">Experiencia sin precedentes</h3>
               <p>
                 Tener un equipo con años de experiencia en el mercado de
@@ -43,8 +42,7 @@ function SectionTeam() {
                 calidad
               </p>
             </div>
-        {/*     <button className="btn-proyecta">Escribenos</button> */}
-            <div data-aos="fade-up-left">
+            <div>
               <button className="btn-proyecta-team">Escribenos</button>
             </div>
           </div>

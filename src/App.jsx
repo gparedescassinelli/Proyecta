@@ -1,14 +1,12 @@
-
-
 import './App.css'
 
-import Aos from 'aos'
+/* import Aos from 'aos'
 import 'aos/dist/aos.css'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { useEffect } from "react";
+import { useEffect } from "react"; */
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import SectionRequest from './components/SectionRequest'
@@ -19,9 +17,10 @@ import SectionFeaturedProjects from './components/SectionFeaturedProjects';
 
 function App() {
 
-  useEffect(() => {
+/*   useEffect(() => {
     Aos.init()
    }, [])
+ */
 
   return (
     <>

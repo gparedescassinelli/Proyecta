@@ -15,15 +15,15 @@ function Footer() {
             </div>
             <div className="contenido-footer__contacto-movil">
               <img src={Telefono} alt="" />
-              <p> +511 - 518-2132</p>
+              <p> +51 980 666 429</p>
             </div>
            {/*  <p>+511 - 518-2132</p> */}
            <div className="contenido-footer__contacto-movil">
             <img src={Correo} alt="" />
-              <p>contacto@proyecta.com</p>
+              <p>krosas@cassinelli.com</p>
             </div>
           {/*   <p>contacto@proyecta.com</p> */}
-            <p>Av. República de Panamá 4495, Surquillo.</p>
+            <p>Av. República de Panamá 4495, Surquillo </p>
             <img src={Whatsp} alt="" />
             <img src={Fb} alt="" className="ms-3" />
           </div>
@@ -33,12 +33,21 @@ function Footer() {
               <img loading="lazy" src={IconoFooter} alt="" />
               <p>PROYECTA</p>
             </div>
-            <p>Horario de atención:</p>
-            <p>L-V: 10am - 7pm</p>
-            <p>S-D: 10am - 6pm</p>
+            <div className="contenido-footer-info">
+            <div className="contenido-footer__contacto">
+              <img src={Telefono} alt="" />
+              <p> +511 - 518-2132</p>
+            </div>
+            <div className="contenido-footer__contacto">
+            <img src={Correo} alt="" />
+              <p>contacto@proyecta.com</p>
+            </div>
+            </div>
+          
+            <p className="container-footer__enlace__parrafo">Av. República de Panamá 4495, Surquillo.</p>
           </div>
 
-          <div className="container-footer__enlace">
+   {/*        <div className="container-footer__enlace">
             <h3>Contáctanos</h3>
             <div className="contenido-footer__contacto">
               <img src={Telefono} alt="" />
@@ -49,9 +58,9 @@ function Footer() {
               <p>contacto@proyecta.com</p>
             </div>
             <p>Av. República de Panamá 4495, Surquillo.</p>
-          </div>
+          </div> */}
 
-          <div className="container-footer__enlace">
+       {/*    <div className="container-footer__enlace">
             <h3>Enlaces</h3>
             <p>
               <a href="#"> Quiénes somos</a>
@@ -59,9 +68,9 @@ function Footer() {
             <p>
               <a href="#"> Nuestras oficinas</a>
             </p>
-          </div>
+          </div> */}
 
-          <div className="container-footer__enlace">
+         {/*  <div className="container-footer__enlace">
             <h3>Legal</h3>
             <p>
               <a href="#">Política de privacidad</a>
@@ -69,7 +78,7 @@ function Footer() {
             <p>
               <a href="#">Términos y condiciones</a>
             </p>
-          </div>
+          </div> */}
         </div>
         <div className="linea"></div>
         <p className="text-center py-3 m-0 copyright">Copyright 2023 - Todos los derechos reservados</p>

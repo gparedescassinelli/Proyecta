@@ -14,13 +14,13 @@ function SectionContact() {
             <p>+51 980 666 429</p>
           </div>
 
-          <div className="container-contactanos-datos__dato" data-aos="fade-left">
+          <div className="container-contactanos-datos__dato">
             <img loading="lazy" src={Escribenos} alt="" />
             <p className="container-contactanos-datos__dato-titulo">Escribenos</p>
             <p>krosas@cassinelli.com</p>
           </div>
 
-          <div className="container-contactanos-datos__dato" data-aos="fade-right">
+          <div className="container-contactanos-datos__dato">
             <img loading="lazy" src={ShowRoom} alt="" />
             <p className="container-contactanos-datos__dato-titulo">Showroom</p>
             <p>Av.Republica de Panamá </p>
