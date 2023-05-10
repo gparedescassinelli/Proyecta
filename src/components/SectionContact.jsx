@@ -3,7 +3,7 @@ import Escribenos from "../assets/escribenos.svg";
 import ShowRoom from "../assets/showroom.svg";
 function SectionContact() {
   return (
-    <div className="container-fluid" style={{ background: "#EFF2F6" }}>
+    <div className="container-fluid" style={{ background: "#EFF2F6" }} id='contactanos'>
       <div className="container-contactanos">
         <h2> ¡Qué esperas, contáctanos!</h2>
 

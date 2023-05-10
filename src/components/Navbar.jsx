@@ -7,7 +7,7 @@ function Navbar() {
       <div className="container">
         <div className="navbar-titulo">
         <img src={IConoHeader} alt=""/>
-        <Link className="navbar-brand title ms-4" to="/">
+        <Link className="navbar-brand title ms-4" to="/" >
           PROYECTA
         </Link>
         </div>
@@ -46,15 +46,16 @@ function Navbar() {
               <Link
                 className="nav-link active navbar-link"
                 aria-current="page"
-                to='/contactanos'
+                to='/quienes-somos'
               >
                 Quiénes somos
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link navbar-link-contactanos" >
+         {/*      <Link className="nav-link navbar-link-contactanos" to='/#contactanos'>
               Contáctanos
-              </Link>
+              </Link> */}
+              <a className="nav-link navbar-link-contactanos" href="#contactanos" >Contáctanos</a>
             </li>
           </ul>
         </div>
