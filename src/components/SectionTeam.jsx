@@ -43,7 +43,7 @@ function SectionTeam() {
               </p>
             </div>
             <div>
-              <button className="btn-proyecta-team">Escribenos</button>
+            <a href="#contactanos" ><button className="btn-proyecta-team">Escribenos</button></a>
             </div>
           </div>
         </div>
