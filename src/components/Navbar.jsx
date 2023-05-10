@@ -1,7 +1,8 @@
 
 import { Link } from "react-router-dom";
 import IConoHeader from "../assets/IconoHeader.svg";
-function Navbar() {
+function Navbar(ubicacion) {
+ // console.log('navBar ->',ubicacion);
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
@@ -55,7 +56,10 @@ function Navbar() {
          {/*      <Link className="nav-link navbar-link-contactanos" to='/#contactanos'>
               Contáctanos
               </Link> */}
-              <a className="nav-link navbar-link-contactanos" href="#contactanos" >Contáctanos</a>
+              {
+                ubicacion.ubicacion == '/quienes-somos' ? (   <Link className="nav-link navbar-link-contactanos" to='/' >Contáctanos</Link>) : (  <a className="nav-link navbar-link-contactanos" href="#contactanos" >Contáctanos</a>)
+              }
+            
             </li>
           </ul>
         </div>

@@ -11,6 +11,7 @@ import Navbar from "../components/Navbar"
 import Footer from '../components/Footer';
 import VisionMision from '../components/VisionMision';
 import Showroom from '../components/Showroom';
+import { useLocation } from 'react-router-dom';
 
 
 
@@ -18,9 +19,15 @@ function ContactUs() {
   useEffect(() => {
     Aos.init()
    }, [])
+   const location = useLocation();
+   const ubicacion = location.pathname;
+   useEffect(() => {
+    // console.log(`Estás en la página ${location.pathname}`);
+   }, [location]);
+ 
   return (
     <>
-    <Navbar/>
+    <Navbar ubicacion={ubicacion}/>
     <AboutUs/>
     <Inspiring/>
     <VisionMision/>

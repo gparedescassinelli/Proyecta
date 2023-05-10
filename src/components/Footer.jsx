@@ -36,11 +36,11 @@ function Footer() {
             <div className="contenido-footer-info">
             <div className="contenido-footer__contacto">
               <img src={Telefono} alt="" />
-              <p> +511 - 518-2132</p>
+              <p> +51 980 666 429</p>
             </div>
             <div className="contenido-footer__contacto">
             <img src={Correo} alt="" />
-              <p>contacto@proyecta.com</p>
+              <p>krosas@cassinelli.com</p>
             </div>
             </div>
           
