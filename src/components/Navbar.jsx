@@ -2,7 +2,6 @@
 import { Link } from "react-router-dom";
 import IConoHeader from "../assets/IconoHeader.svg";
 function Navbar(ubicacion) {
- // console.log('navBar ->',ubicacion);
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">

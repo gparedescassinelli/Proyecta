@@ -1,37 +1,43 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './App.css'
-/* import App from './App.jsx' */
-/* import './index.css' */
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Home from './routes/Home'
-import Error from './components/Error'
-import ContactUs from './routes/ContactUs'
-//import Hero from './components/Hero'
+import ReactDOM from "react-dom/client";
+import  { Suspense } from "react";
+import "./App.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Error from "./components/Error";
+import Cargando from "./components/Cargando";
+import Home from './pages/Home';
+import ContactUs from './pages/ContactUs';
 
-
+/* const Home = lazy(() => import("./pages/Home"));
+const ContactUs = lazy(() => import("./pages/ContactUs")); */
 
 const router = createBrowserRouter([
   {
-    path:'/',
-    element:<Home/>,
-    errorElement:<Error/>,
-  /*   children:[
-      {
-        path:'/',
-        element:<Hero/>
-      },
-    ] */
+    path: "/",
+    element: (
+      <Suspense fallback={<Cargando />}>
+        <Home />
+      </Suspense>
+    ),
+
+    errorElement: <Error />,
   },
   {
-    path:'/quienes-somos',
-    element:<ContactUs/>
-  }
-])
+    path: "/quienes-somos",
+    element: (
+      <Suspense fallback={<Cargando />}>
+        <ContactUs />
+      </Suspense>
+    ),
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   {/*  <App /> */}
     <RouterProvider router={router}/>
   </React.StrictMode>,
 )
+  
+
+
+

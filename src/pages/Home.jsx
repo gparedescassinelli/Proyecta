@@ -14,6 +14,7 @@ import SectionContact from "../components/SectionContact";
 import SectionFeaturedProjects from "../components/SectionFeaturedProjects";
 import Footer from "../components/Footer";
 import { useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet";
 //import { useState } from "react";
 
 function Home() {
@@ -22,13 +23,15 @@ function Home() {
   }, []);
   const location = useLocation();
   const ubicacion = location.pathname;
-//const [ubicacion, setUbicacion] = useState(location.pathname)
-  useEffect(() => {
-   // console.log(`Estás en la página Inicio => ${ubicacion}`);
-  }, [location]);
 
   return (
     <>
+      <Helmet>
+        <title>Proyecta - Bienvenido</title>
+        <link rel="canonical" href="https://proyecta-cassinelli.com/" />
+        <meta name="description" content="Proyectos que transforman tu ciudad, Entregamos valor a tus proyectos, con los mejores acabados" />
+        <meta name="site_name" content="Proyecta - Proyectos que transforman tu ciudad"/>
+      </Helmet>
       <Navbar ubicacion={ubicacion} />
       <Hero />
       <SectionRequest />

@@ -274,7 +274,7 @@ img {
   margin-top: 80px;
   margin-bottom: 55px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .title-equipo-especializado {
     width: 100%;
     font-size: 38px;
@@ -310,7 +310,7 @@ img {
   margin-bottom: 26px;
   color: #000000;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .container-equipo-especializado {
     flex-direction: column;
     gap: 5px;
@@ -560,12 +560,21 @@ footer img {
 
 /* SectionFeaturedProjects */
 .bg-image-project {
-  width: 384px;
-  height: 480px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   object-fit: cover;
   background-size: cover;
 }
+/* @media (max-width: 1200px) { 
+  .bg-image-project {
+    width: 100%;
+    height: 480px;
+    margin: 0 auto;
+    object-fit: cover;
+    background-size: cover;
+  }
+ } */
 .featuredproject-title {
   font-style: normal;
   font-weight: 500;

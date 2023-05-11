@@ -12,6 +12,7 @@ import Footer from '../components/Footer';
 import VisionMision from '../components/VisionMision';
 import Showroom from '../components/Showroom';
 import { useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -21,12 +22,14 @@ function ContactUs() {
    }, [])
    const location = useLocation();
    const ubicacion = location.pathname;
-   useEffect(() => {
-    // console.log(`Estás en la página ${location.pathname}`);
-   }, [location]);
  
   return (
     <>
+     <Helmet>
+        <title>Quiénes somos</title>
+        <link rel="canonical" href="https://proyecta-cassinelli.com/quienes-somos" />
+        <meta name="description" content="Proyectos que transforman tu ciudad, Entregamos valor a tus proyectos, con los mejores acabados" />
+      </Helmet>
     <Navbar ubicacion={ubicacion}/>
     <AboutUs/>
     <Inspiring/>

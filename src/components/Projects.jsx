@@ -1,7 +1,6 @@
 
 
 function Projects(pro) {
-   // console.log('ver pro',pro)
   return (
     <div className="bg-image-project"
   >
