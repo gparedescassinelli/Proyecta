@@ -23,10 +23,8 @@ function SectionContact() {
           <div className="container-contactanos-datos__dato">
             <img loading="lazy" src={ShowRoom} alt="" />
             <p className="container-contactanos-datos__dato-titulo">Showroom</p>
-            <p>Av.Republica de Panamá </p>
-            <p>
-            N°4495
-            </p>
+            <p>Av.Republica de Panamá  N°4495</p>
+        
             <p>Surquillo, Lima, Peru</p> 
           </div>
         </div>

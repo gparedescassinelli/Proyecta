@@ -347,6 +347,11 @@ img {
   justify-content: center;
   gap: 250px;
 }
+/* @media (max-width: 1400px) { 
+  .container-contactanos-datos {
+   flex-direction: column;
+  }
+ } */
 @media (max-width: 992px) {
   .container-contactanos-datos {
     flex-direction: column;
@@ -428,10 +433,10 @@ footer img {
   width: 50px;
 }
 
-.container-footer__enlace{
+.container-footer__enlace {
   margin: 0 auto;
 }
-.contenido-footer-info{
+.contenido-footer-info {
   display: flex;
   justify-content: center;
   gap: 31px;
@@ -439,7 +444,7 @@ footer img {
 .container-footer__enlace p {
   font-size: 18px !important;
 }
-.container-footer__enlace__parrafo{
+.container-footer__enlace__parrafo {
   text-align: center;
 }
 
@@ -701,34 +706,61 @@ footer img {
   background: #eff2f6;
   padding: 65px 0;
 }
-.inspiring-img {
-  width: 714px;
-  height: 525px;
-  background-image: url("../src/assets/D-QUIENESSOMOS.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 .container-inspiring-texto {
   display: flex;
   justify-content: space-between;
   gap: 75px;
 }
+@media (max-width: 992px) { 
+  .container-inspiring-texto {
+    flex-direction: column-reverse;
+    gap: 30px;
+    align-items: center;
+    padding: 0 15px;
+  }
+ }
+.img-inspiring-destok{
+  max-width: 714px;
+  object-fit: cover;
+}
+.img-inspiring-movil{
+  display: none;
+  object-fit: cover;
+}
+@media (max-width: 1200px) { 
+  .img-inspiring-destok{
+    max-width: 454px;
+    object-fit: cover;
+  }
+ }
+@media (max-width: 992px) { 
+  .img-inspiring-destok{
+    max-width: 100%;
+    display: none;
+  }
+  .img-inspiring-movil{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+  }
+ }
 .inspiring-texto h2 {
-  width: 533px;
-  height: 160px;
+ /*  width: 100%;
+  max-width: 533px;
+  height: 160px; */
   font-style: normal;
   font-weight: 500;
-  font-size: 65px;
-  line-height: 80px;
+  font-size: 60px;
   letter-spacing: -4px;
   color: #202737;
   mix-blend-mode: normal;
   margin-bottom: 129px;
 }
+
 .inspiring-texto p {
+  /* width: 100%;
   width: 538px;
-  height: 230px;
+  height: 230px; */
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -738,57 +770,29 @@ footer img {
   color: #202737;
 }
 @media (max-width: 1400px) { 
-  .container-inspiring-texto {
-   flex-direction: column;
-   align-items: center;
-  }
- }
-@media (max-width: 768px) {
-  .container-inspiring {
-    background: var(--color-white);
-    padding: 40px 0;
-  }
-  .container-inspiring-texto {
-    flex-direction: column-reverse;
-    gap: 40px;
-  }
-
-  .inspiring-img {
-    max-width: 360px;
-    width: 100%;
-    height: 174px;
-    background-image: url("../src/assets/R-QUIENESSOMOS.jpg") !important;
-    margin: 0 auto;
-  }
-
   .inspiring-texto h2 {
-    width: 313px;
-    height: 80px;
-    font-style: normal;
-    font-weight: 500;
+     font-size: 45px;
+   }
+   
+   .inspiring-texto p {
+     font-size: 15px;
+   }
+ }
+@media (max-width: 992px) { 
+  .inspiring-texto h2 {
     font-size: 30px;
     line-height: 40px;
     text-align: center;
     letter-spacing: -1px;
-    color: #202737;
-    mix-blend-mode: normal;
-    margin: 0 auto;
     margin-bottom: 35px;
-  }
+   }
+   
+   .inspiring-texto p {
+     font-size: 14px;
+   }
+ }
 
-  .inspiring-texto p {
-    width: 309px;
-    height: 158px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: justify;
-    letter-spacing: 0.38px;
-    color: #202737;
-    margin: 0 auto;
-  }
-}
+
 /* fin Inspiring */
 
 /* VisionMision */
@@ -797,6 +801,7 @@ footer img {
   justify-content: space-between;
   padding-top: 101px;
   padding-bottom: 41px;
+  gap: 69px;
 }
 .container-visionmision__info img {
   width: 122px;
@@ -807,7 +812,6 @@ footer img {
   margin-bottom: 27px;
 }
 .container-visionmision__info h2 {
-  width: 548px;
   height: 80px;
   font-style: normal;
   font-weight: 500;
@@ -819,7 +823,6 @@ footer img {
   margin-bottom: 12px;
 }
 .container-visionmision__info p {
-  width: 605px;
   height: 228px;
   font-style: normal;
   font-weight: 400;
@@ -829,27 +832,27 @@ footer img {
   letter-spacing: 0.38px;
   color: #202737;
 }
-@media (max-width: 1400px) { 
+@media (max-width: 1400px) {
   .container-visionmision-textos {
-   flex-direction: column;
-   align-items: center;
+    gap: 69px;
   }
   .container-visionmision__info h2 {
-    text-align: center;
-    width: 100%;
+  
+    font-size: 36px;
   }
-  .container-visionmision__info img {
-    margin: 0 auto;
-    margin-bottom: 25px;
+  .container-visionmision__info p {
+  
+    font-size: 14px;
   }
- }
+
+}
 
 @media (max-width: 768px) {
   .container-visionmision-textos {
     display: flex;
     flex-direction: column;
     padding-top: 43px;
-    padding-bottom: 52px;
+    padding-bottom: 40px;
     gap: 45px;
   }
 
@@ -866,7 +869,6 @@ footer img {
     letter-spacing: 1px;
   }
   .container-visionmision__info p {
-    width: 315px;
     height: 169px;
 
     font-style: normal;
@@ -900,8 +902,7 @@ footer img {
   height: 100%;
 }
 .container-showroom-textos h2 {
-  width: 417px;
-  height: 45px;
+ 
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -911,13 +912,13 @@ footer img {
   margin-bottom: 38px;
 }
 .container-showroom-textos p {
-  width: 883px;
   height: 108px;
+  width: 883px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
-  text-align: center;
+  text-align: justify;
   letter-spacing: 0.38px;
   margin-bottom: 34px;
 }
@@ -932,28 +933,25 @@ footer img {
   letter-spacing: -0.3px;
   color: #234680;
 }
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
+
+  .container-showroom-textos{
+    padding: 0 15px;
+  }
   .container-showroom-textos h2 {
-    width: 340px;
-    height: 45px;
+    width: 100%;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 45px;
     text-align: center;
     letter-spacing: -1.6px;
-    margin-bottom: 78px;
+    margin-top: 0;
   }
   .container-showroom-textos p {
-    width: 313px;
-    height: 136px;
-    font-style: normal;
-    font-weight: 500;
+    width: 100%;
+    height: auto;
     font-size: 14px;
-    line-height: 16px;
-    text-align: justify;
-    letter-spacing: 0.38px;
-    margin-bottom: 52px;
   }
   .container-showroom-textos button {
     padding: 15px 20px;
@@ -966,6 +964,6 @@ footer img {
     letter-spacing: -0.3px;
     color: #234680;
   }
- }
+}
 
 /* fin Showroom */
