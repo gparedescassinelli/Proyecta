@@ -14,32 +14,32 @@ function Footer() {
               <p>PROYECTA</p>
             </div>
             <div className="contenido-footer__contacto-movil">
-              <img src={Telefono} alt="" />
+              <img loading="lazy" src={Telefono} alt="" />
               <p> +51 980 666 429</p>
             </div>
            {/*  <p>+511 - 518-2132</p> */}
            <div className="contenido-footer__contacto-movil">
-            <img src={Correo} alt="" />
+            <img loading="lazy" src={Correo} alt="" />
               <p>krosas@cassinelli.com</p>
             </div>
           {/*   <p>contacto@proyecta.com</p> */}
             <p>Av. República de Panamá 4495, Surquillo </p>
-            <img src={Whatsp} alt="" />
-            <img src={Fb} alt="" className="ms-3" />
+            <img loading="lazy" src={Whatsp} alt="" />
+            <img loading="lazy" src={Fb} alt="" className="ms-3" />
           </div>
 
           <div className="container-footer__enlace">
             <div className="container-footer__enlace-titulo">
-              <img loading="lazy" src={IconoFooter} alt="" />
+              <img loading="lazy"src={IconoFooter} alt="" />
               <p>PROYECTA</p>
             </div>
             <div className="contenido-footer-info">
             <div className="contenido-footer__contacto">
-              <img src={Telefono} alt="" />
+              <img loading="lazy" src={Telefono} alt="" />
               <p> +51 980 666 429</p>
             </div>
             <div className="contenido-footer__contacto">
-            <img src={Correo} alt="" />
+            <img loading="lazy" src={Correo} alt="" />
               <p>krosas@cassinelli.com</p>
             </div>
             </div>

@@ -6,7 +6,7 @@ function Navbar(ubicacion) {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
         <div className="navbar-titulo">
-        <img src={IConoHeader} alt=""/>
+        <img loading="lazy" src={IConoHeader} alt=""/>
         <Link className="navbar-brand title ms-4" to="/" >
           PROYECTA
         </Link>

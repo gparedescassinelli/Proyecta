@@ -7,7 +7,7 @@ export default function VisionMision() {
         <div className="container container-visionmision-textos">
           
           <div className="container-visionmision__info">
-          <img src={Mision} alt="" />
+          <img loading="lazy" src={Mision} alt="" />
             <h2>
             Visión 
             </h2>
@@ -17,7 +17,7 @@ export default function VisionMision() {
           </div>
 
           <div className="container-visionmision__info">
-          <img src={Vision} alt="" />
+          <img loading="lazy" src={Vision} alt="" />
             <h2>Misión</h2>
             <p>
             Ser la empresa líder en el mercado de materiales de acabados, reconocida por nuestra calidad, excelente servicio al cliente e innovación constante en nuestro catálogo de productos. Nos esforzamos por ser un socio confiable y de confianza para nuestros clientes, proporcionando soluciones integrales para sus proyectos y manteniendo una sólida relación a largo plazo basada en la honestidad, la transparencia y la calidad en todo lo que hacemos.
